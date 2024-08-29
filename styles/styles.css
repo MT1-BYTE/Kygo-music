@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414; 
+    color: white; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px; 
+}
+
+header {
+    background-color: #141414;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para el header y la barra de navegación */
+.customNavBar {
+    background-color: #141414 !important; /* Fondo del header */
+    padding: 4px !important; /* Padding de todo el header */
+}
+
+.customNavBar .container-fluid {
+    display: flex;
+    justify-content: space-between; /* Asegura que el logo y el menú de navegación estén separados */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+}
+
+.customNavBar .navbar-nav {
+    display: flex;
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar padding por defecto */
+    flex-wrap: nowrap; /* Evita el wrapping de los elementos */
+    justify-content: flex-end; /* Alinear los ítems a la derecha */
+}
+
+.customNavBar .nav-item {
+    margin: 0 16px; /* Margen horizontal de 16px entre los elementos */
+}
+
+.customNavBar .nav-link {
+    color: white; /* Color del texto */
+    font-family: 'Segoe UI', sans-serif; /* Fuente Segoe UI */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    font-weight: bold; /* Negrita por defecto */
+    text-decoration: none; /* Quitar subrayado */
+    padding: 8px 16px; /* Padding para el área clickeable */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para fondo y color */
+    display: inline-block; /* Asegura que el padding y border-radius se apliquen correctamente */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+}
+
+.customNavBar .nav-link:hover {
+    background-color: #ffffff; /* Fondo blanco al hacer hover */
+    color: black; /* Texto negro al hacer hover */
+    /* Eliminamos el borde y cualquier efecto de sombra */
+}
+
+.logoImage {
+    width: 75px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/*
+Header {
+    background-color: #141414; 
+    padding: 15px;
+}
+
+/*
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoImage {
+    width: 75px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navItem {
+    padding: 24px;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+*/
+.heroImageSection {
+    margin: 15px;
+    padding: 0px;
+}
+
+.heroImage {
+    width: 100%;
+    height: 600px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.mainContent {
+    margin: 15px ;
+    padding: 0;
+}
+
+.mainContent h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    margin-bottom: 75px
+}
+
+.articlesSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.articleImage {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.articleContent {
+    margin-top: 8px;
+}
+
+.articleTitle {
+    font-size: 24px;
+    margin-bottom: 8px;
+
+}
+
+.articleText {
+    font-size: 16px;
+    color: #ebebeb;
+    line-height: 1.5;
+    margin-bottom: 0px;
+
+}
+
+.quoteSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profileImage {
+    width: 650px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 45px;
+    margin-bottom: 16px;
+}
+
+.quoteText {
+    font-size: 24px; 
+    font-weight: 300; 
+    font-style: italic; 
+    color: #ffffff; 
+    border-left: 4px solid #ffffff; /* Línea vertical a la izquierda para énfasis */
+    padding: 16px; 
+    line-height: 1.5; 
+}
+
+.quoteSignature {
+    font-size: 28px; 
+    font-weight: bold; 
+    font-style: italic; 
+    color: #ffffff;
+    margin-bottom: 150px;
+}
+
+
+.footer {
+    padding: 16px;
+    text-align: center;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+}
+
+.footerTitle {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+}
+
+.socialIcon {
+    height: 36px;
+    width: 36px;
+}
+
+.footerText {
+    font-weight: lighter;
+    font-size: small;
+    color: #ebebeb;
+    margin-top: 16px;
+}
+
+.suscribeSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.suscribeTitle {
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.suscribeDescription {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.suscribeForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+
+.suscribeLabel {
+    color: rgb(216, 216, 216);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.suscribeInput {
+    width: 100%;
+    max-width: 500px; /* Aumenta el ancho máximo del input */
+    padding: 16px; /* Aumenta el padding para hacer las cajas más altas */
+    border-radius: 8px;
+    border: 1px solid #333;
+    margin-bottom: 16px;
+    background-color: #141414;
+    color: white;
+    font-size: 18px; 
+}
+
+.suscribeButton {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 100px;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #222222;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.suscribeButton:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.tourDates {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    margin: 0;
+}
+
+.tourDates h1 {
+    font-size: 42px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.tourItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #292929;
+    border-radius: 8px;
+    color: white;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.tourDate {
+    flex: 1;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 36px;
+    text-align: center;
+    margin: 0 8px;
+}
+
+.tourVenue {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 8px;
+}
+
+.tourLocation {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 8px;
+}
+
+.tourButton {
+    padding: 12px 24px;
+    background-color: #292929;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.tourButton:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.musicSection {
+    padding: 16px;
+}
+
+.musicTitle {
+    font-size: 42px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.musicContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.musicFrame {
+    flex: 1;
+}
+
+.gallerySection {
+    padding: 16px;
+}
+
+.galleryTitle {
+    font-size: 42px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*3 columnas de igual ancho */
+    gap: 24px;
+}
+
+.galleryItem {
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galleryItem:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar la imagen */
+}
+
+.contactSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.contactTitle {
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.contactDescription {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contactLabel {
+    color: rgb(216, 216, 216);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contactInput {
+    width: 100%;
+    max-width: 500px; 
+    padding: 16px; 
+    border-radius: 8px;
+    border: 1px solid #333;
+    margin-bottom: 16px;
+    background-color: #141414;
+    color: white;
+    font-size: 18px; 
+}
+
+.contactTextArea {
+    width: 100%;
+    max-width: 500px;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    margin-bottom: 16px;
+    background-color: #141414;
+    color: white;
+    font-size: 18px; 
+    resize: vertical; 
+    height: 150px; 
+}
+
+.contactButton {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #222222;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contactButton:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+
+    .navBar {
+        flex-direction: column;
+    }
+
+    .navList {
+        flex-direction: column;
+    }
+
+    .profileImage {
+        width: 100%;
+    }
+
+    .socialLinks {
+        flex-wrap: wrap;
+    }
+
+    .galleryGrid {
+        grid-template-columns: repeat(1, 1fr); /*3 columnas de igual ancho */
+        width: 100%;
+    }
+
+    .galleryItem {
+        height: auto;
+        object-fit: contain; 
+    }
+
+
+
+    
+}
+
+
+
+
