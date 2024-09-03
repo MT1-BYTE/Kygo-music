@@ -19,45 +19,42 @@ header {
 
 /* Estilos para el header y la barra de navegación */
 .customNavBar {
-    background-color: #141414 !important; /* Fondo del header */
-    padding: 4px !important; /* Padding de todo el header */
+    background-color: #141414 !important; 
+    padding: 4px !important; 
 }
 
 .customNavBar .container-fluid {
     display: flex;
-    justify-content: space-between; /* Asegura que el logo y el menú de navegación estén separados */
-    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .customNavBar .navbar-nav {
-    display: flex;
-    margin: 0; /* Eliminar márgenes por defecto */
-    padding: 0; /* Eliminar padding por defecto */
-    flex-wrap: nowrap; /* Evita el wrapping de los elementos */
-    justify-content: flex-end; /* Alinear los ítems a la derecha */
+    margin: 0; 
+    padding: 0; 
+    flex-wrap: nowrap; 
 }
 
 .customNavBar .nav-item {
-    margin: 0 16px; /* Margen horizontal de 16px entre los elementos */
+    margin: 0 16px; 
 }
 
 .customNavBar .nav-link {
-    color: white; /* Color del texto */
-    font-family: 'Segoe UI', sans-serif; /* Fuente Segoe UI */
-    font-size: 16px; /* Tamaño de fuente de 16px */
-    font-weight: bold; /* Negrita por defecto */
-    text-decoration: none; /* Quitar subrayado */
-    padding: 8px 16px; /* Padding para el área clickeable */
-    border-radius: 8px; /* Bordes redondeados */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para fondo y color */
-    display: inline-block; /* Asegura que el padding y border-radius se apliquen correctamente */
-    box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+    color: white; 
+    font-family: 'Segoe UI', sans-serif; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    padding: 8px 16px; 
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    display: inline-block; 
+    box-sizing: border-box; 
 }
 
 .customNavBar .nav-link:hover {
     background-color: #ffffff; /* Fondo blanco al hacer hover */
     color: black; /* Texto negro al hacer hover */
-    /* Eliminamos el borde y cualquier efecto de sombra */
 }
 
 .logoImage {
