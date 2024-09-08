@@ -493,11 +493,7 @@ header {
     .galleryItem {
         height: auto;
         object-fit: contain; 
-    }
-
-
-
-    
+    } 
 }
 
 
