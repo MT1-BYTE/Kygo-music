@@ -1,0 +1,42 @@
+//Estilos para mainGallery
+
+.mainGallery {
+    @include flexbox(column, center, flex-start);
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+
+    .heroImageSection {
+        @include flexbox(column, center, center);
+        margin: 15px;
+        padding: 0;
+
+        .heroImage {
+            @include style(100%, 550px, 16px);
+        }
+    }
+
+    .gallerySection {
+        padding: 16px;
+
+        .galleryTitle {
+            @include text-style(42px, bolder);
+            text-align: center;
+            margin-bottom: 75px;
+        }
+
+        .galleryGrid {
+            @include grid-layout(repeat(3, 1fr), 24px);
+
+            .galleryItem {
+                @include style(100%, 325px, 8px);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.05); // Efecto de zoom al pasar el mouse
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); // Sombra para destacar la imagen
+                }
+            }
+        }
+    }
+}

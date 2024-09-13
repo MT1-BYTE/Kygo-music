@@ -1,0 +1,65 @@
+//Estilos para mainTourDates
+
+.mainTourDates {
+    @include flexbox(column, center, flex-start);
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+
+    .heroImageSection {
+        margin: 15px;
+        padding: 0;
+    
+        .heroImage {
+          @include style(100%, 550px, 16px);
+        }
+      }
+
+    h1 {
+        @include text-style(42px, bolder);
+        text-align: center;
+        margin-bottom: 75px;
+        color: $primary-text-color;
+    }
+
+    .tourItem {
+        @include flexbox(row, space-between, center);
+        padding: 16px;
+        background-color: #292929;
+        border-radius: 8px;
+        color: $primary-text-color;
+        width: 100%;
+        margin-bottom: 16px;
+
+        .tourDate {
+            flex: 1;
+            @include text-style(36px, bold);
+            font-style: italic;
+            text-align: center;
+            margin: 0 8px;
+        }
+
+        .tourVenue,
+        .tourLocation {
+            flex: 1;
+            @include text-style(18px, normal);
+            text-align: center;
+            margin: 0 8px;
+        }
+
+        .tourButton {
+            padding: 12px 24px;
+            background-color: $button-bg-color;
+            color: $button-text-color;
+            border-radius: 8px;
+            text-decoration: none;
+            @include text-style(20px, bold);
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: $button-hover-bg-color;
+                color: $button-hover-text-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+//Estilos para mainHome
+
+.mainHome {
+    @include flexbox(column, center, center);
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+  
+    .heroImageSection {
+      margin: 15px;
+      padding: 0;
+  
+      .heroImage {
+        @include style(100%, 550px, 16px);
+      }
+    }
+  
+    h1 {
+      @include text-style(42px, bolder);
+      text-align: center;
+      margin-bottom: 75px;
+      color: $primary-text-color;
+    }
+  
+    .articlesSection {
+      @include flexbox(row, center, center, wrap);
+      gap: 100px;
+      margin-bottom: 150px;
+  
+      .article {
+        @include flexbox(column, center, center);
+        width: 300px;
+  
+        .articleImage {
+          @include style(300px, 300px, 8px);
+        }
+  
+        .articleContent {
+          margin-top: 8px;
+        }
+  
+        .articleTitle {
+          @include text-style(24px, bold);
+          margin-bottom: 8px;
+        }
+  
+        .articleText {
+          font-size: 16px;
+          color: #ebebeb;
+          line-height: 1.5;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  
+    .quoteSection {
+      @include flexbox(column, center, center);
+  
+      .profileImage {
+        @include style(650px, auto, 45px);
+        margin-bottom: 16px;
+      }
+  
+      .quoteText {
+        @include text-style(24px, 300);
+        font-style: italic; 
+        color: #ffffff; 
+        border-left: 4px solid #ffffff; /* Línea vertical a la izquierda para énfasis */
+        padding: 16px; 
+        line-height: 1.5; 
+      }
+  
+      .quoteSignature {
+        @include text-style(28px, bold);
+        margin-bottom: 150px;
+        font-style: italic; 
+        color: #ffffff;
+        margin-bottom: 150px;
+      }
+    }
+  
+    .suscribeSection {
+      @include flexbox(column, center, center);
+      padding: 16px;
+  
+      .suscribeTitle {
+        @include text-style(32px, bold);
+        text-align: left;
+        margin-bottom: 8px;
+      }
+  
+      .suscribeDescription {
+        @include text-style(20px, normal);
+        text-align: center;
+        margin-bottom: 16px;
+      }
+  
+      .suscribeForm {
+        @include flexbox(column, center, center);
+        width: 100%;
+  
+        .suscribeLabel {
+          color: #d8d8d8;
+          margin-bottom: 8px;
+          font-weight: bold;
+        }
+  
+        .suscribeInput {
+          @include style(100%, 100px, 8px);
+          max-width: 500px;
+          padding: 16px;
+          border: 1px solid #333;
+          margin-bottom: 16px;
+          background-color: #141414;
+          color: white;
+          font-size: 18px;
+        }
+  
+        .suscribeButton {
+          @include style(100%, 50px, 8px);
+          max-width: 500px;
+          margin-bottom: 100px;
+          padding: 16px;
+          border: none;
+          background-color: #222222;
+          color: white;
+          font-size: 20px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: #ffffff;
+            color: black;
+          }
+        }
+      }
+    }
+  }

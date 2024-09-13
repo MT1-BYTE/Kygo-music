@@ -1,0 +1,35 @@
+.footer {
+    padding: 16px;
+    text-align: center;
+    background-color: $primary-bg-color;
+    color: $primary-text-color;
+
+    .footerContent {
+        @include center-content;
+        flex-direction: column;
+        margin: 16px;
+
+        .footerTitle {
+            font-weight: bold;
+            color: $primary-text-color;
+            margin-bottom: 16px;
+        }
+
+        .socialLinks {
+            @include center-content;
+            gap: 26px;
+
+            .socialIcon {
+                height: $social-icon-size;
+                width: $social-icon-size;
+            }
+        }
+
+        .footerText {
+            font-weight: lighter;
+            font-size: small;
+            color: $footer-text-color;
+            margin-top: 16px;
+        }
+    }
+}

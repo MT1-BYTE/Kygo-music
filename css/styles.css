@@ -1,0 +1,553 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px;
+}
+
+header {
+  background-color: #141414;
+  padding: 0;
+  margin: 0;
+}
+header .customNavBar {
+  background-color: #141414 !important;
+  padding: 4px !important;
+}
+header .customNavBar .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .customNavBar .container-fluid .navbar-brand .logoImage {
+  width: 75px;
+  height: auto;
+  border-radius: 5px;
+}
+header .customNavBar .container-fluid .collapse .navbar-collapse ul.navbar-nav {
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+}
+header .customNavBar .container-fluid .collapse .navbar-collapse ul.navbar-nav .nav-item {
+  margin: 0 16px;
+}
+header .customNavBar .container-fluid .collapse .navbar-collapse ul.navbar-nav .nav-item .nav-link {
+  background-color: #222222;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+header .customNavBar .container-fluid .collapse .navbar-collapse ul.navbar-nav .nav-item .nav-link:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.mainHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+.mainHome .heroImageSection {
+  margin: 15px;
+  padding: 0;
+}
+.mainHome .heroImageSection .heroImage {
+  width: 100%;
+  height: 550px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.mainHome h1 {
+  font-size: 42px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 75px;
+  color: white;
+}
+.mainHome .articlesSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-bottom: 150px;
+}
+.mainHome .articlesSection .article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 300px;
+}
+.mainHome .articlesSection .article .articleImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.mainHome .articlesSection .article .articleContent {
+  margin-top: 8px;
+}
+.mainHome .articlesSection .article .articleTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.mainHome .articlesSection .article .articleText {
+  font-size: 16px;
+  color: #ebebeb;
+  line-height: 1.5;
+  margin-bottom: 0px;
+}
+.mainHome .quoteSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.mainHome .quoteSection .profileImage {
+  width: 650px;
+  height: auto;
+  border-radius: 45px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.mainHome .quoteSection .quoteText {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #ffffff;
+  border-left: 4px solid #ffffff; /* Línea vertical a la izquierda para énfasis */
+  padding: 16px;
+  line-height: 1.5;
+}
+.mainHome .quoteSection .quoteSignature {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 150px;
+  font-style: italic;
+  color: #ffffff;
+  margin-bottom: 150px;
+}
+.mainHome .suscribeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 16px;
+}
+.mainHome .suscribeSection .suscribeTitle {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.mainHome .suscribeSection .suscribeDescription {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.mainHome .suscribeSection .suscribeForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.mainHome .suscribeSection .suscribeForm .suscribeLabel {
+  color: #d8d8d8;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.mainHome .suscribeSection .suscribeForm .suscribeInput {
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  max-width: 500px;
+  padding: 16px;
+  border: 1px solid #333;
+  margin-bottom: 16px;
+  background-color: #141414;
+  color: white;
+  font-size: 18px;
+}
+.mainHome .suscribeSection .suscribeForm .suscribeButton {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+  max-width: 500px;
+  margin-bottom: 100px;
+  padding: 16px;
+  border: none;
+  background-color: #222222;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.mainHome .suscribeSection .suscribeForm .suscribeButton:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.mainTourDates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+.mainTourDates .heroImageSection {
+  margin: 15px;
+  padding: 0;
+}
+.mainTourDates .heroImageSection .heroImage {
+  width: 100%;
+  height: 550px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.mainTourDates h1 {
+  font-size: 42px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 75px;
+  color: white;
+}
+.mainTourDates .tourItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 16px;
+  background-color: #292929;
+  border-radius: 8px;
+  color: white;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.mainTourDates .tourItem .tourDate {
+  flex: 1;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  margin: 0 8px;
+}
+.mainTourDates .tourItem .tourVenue,
+.mainTourDates .tourItem .tourLocation {
+  flex: 1;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 8px;
+}
+.mainTourDates .tourItem .tourButton {
+  padding: 12px 24px;
+  background-color: #222222;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.mainTourDates .tourItem .tourButton:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.music {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+.music .heroImageSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 15px;
+  padding: 0;
+}
+.music .heroImageSection .heroImage {
+  width: 100%;
+  height: 550px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.music .musicSection {
+  padding: 16px;
+}
+.music .musicTitle {
+  font-size: 42px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 75px;
+}
+.music .musicContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.music .musicFrame {
+  width: 100%;
+  height: 152px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.mainGallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+.mainGallery .heroImageSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 15px;
+  padding: 0;
+}
+.mainGallery .heroImageSection .heroImage {
+  width: 100%;
+  height: 550px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.mainGallery .gallerySection {
+  padding: 16px;
+}
+.mainGallery .gallerySection .galleryTitle {
+  font-size: 42px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 75px;
+}
+.mainGallery .gallerySection .galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.mainGallery .gallerySection .galleryGrid .galleryItem {
+  width: 100%;
+  height: 325px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mainGallery .gallerySection .galleryGrid .galleryItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.mainContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+.mainContact .heroImageSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 15px;
+  padding: 0;
+}
+.mainContact .heroImageSection .heroImage {
+  width: 100%;
+  height: 550px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.mainContact .contactSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 16px;
+}
+.mainContact .contactSection .contactTitle {
+  font-size: 42px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 75px;
+}
+.mainContact .contactSection .contactDescription {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.mainContact .contactSection .contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.mainContact .contactSection .contactForm .contactLabel {
+  color: rgb(216, 216, 216);
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.mainContact .contactSection .contactForm .contactInput,
+.mainContact .contactSection .contactForm .contactTextArea {
+  width: 100%;
+  max-width: 500px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  margin-bottom: 16px;
+  background-color: #141414;
+  color: white;
+  font-size: 18px;
+}
+.mainContact .contactSection .contactForm .contactTextArea {
+  resize: vertical;
+  height: 150px;
+}
+.mainContact .contactSection .contactForm .contactButton {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #222222;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.mainContact .contactSection .contactForm .contactButton:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.footer {
+  padding: 16px;
+  text-align: center;
+  background-color: #141414;
+  color: white;
+}
+.footer .footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 16px;
+}
+.footer .footerContent .footerTitle {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 16px;
+}
+.footer .footerContent .socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+}
+.footer .footerContent .socialLinks .socialIcon {
+  height: 36px;
+  width: 36px;
+}
+.footer .footerContent .footerText {
+  font-weight: lighter;
+  font-size: small;
+  color: #ebebeb;
+  margin-top: 16px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+  }
+  .navList {
+    flex-direction: column;
+  }
+  .profileImage {
+    width: 100%;
+  }
+  .tourDates {
+    width: 100%;
+  }
+  .tourItem {
+    flex-direction: column;
+  }
+  .tourLocation {
+    margin-bottom: 16px;
+  }
+  .socialLinks {
+    flex-wrap: wrap;
+  }
+  .galleryGrid {
+    grid-template-columns: repeat(1, 1fr); /*3 columnas de igual ancho */
+    width: 100%;
+  }
+  .galleryItem {
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

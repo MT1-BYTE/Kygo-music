@@ -75,12 +75,15 @@ header {
     object-fit: cover;
 }
 
-.mainContent {
-    margin: 15px ;
+.mainHome {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
     padding: 0;
 }
 
-.mainContent h1 {
+.mainHome h1 {
     text-align: center;
     font-size: 42px;
     font-weight: bolder;
@@ -126,7 +129,6 @@ header {
     color: #ebebeb;
     line-height: 1.5;
     margin-bottom: 0px;
-
 }
 
 .quoteSection {
@@ -268,12 +270,12 @@ header {
     color: black;
 }
 
-.tourDates {
+.mainTourDates {
     display: flex;
     flex-direction: column;
-    padding: 16px;
     gap: 16px;
     margin: 0;
+    padding: 0;
 }
 
 .tourDates h1 {
@@ -335,6 +337,14 @@ header {
     color: black;
 }
 
+.mainMusic {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
 .musicSection {
     padding: 16px;
 }
@@ -355,6 +365,14 @@ header {
 
 .musicFrame {
     flex: 1;
+}
+
+.mainGallery {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .gallerySection {
@@ -383,8 +401,16 @@ header {
 }
 
 .galleryItem:hover {
-    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar la imagen */
+}
+
+.mainContact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .contactSection {
@@ -467,7 +493,7 @@ header {
     color: black;
 }
 
-@media (min-width: 360px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
 
     .navBar {
         flex-direction: column;
@@ -479,6 +505,18 @@ header {
 
     .profileImage {
         width: 100%;
+    }
+
+    .tourDates {
+        width: 100%;
+    }
+
+    .tourItem {
+        flex-direction: column;
+    }
+
+    .tourLocation {
+        margin-bottom: 16px;
     }
 
     .socialLinks {

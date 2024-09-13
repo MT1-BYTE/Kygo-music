@@ -1,0 +1,84 @@
+//Estilos para mainContact
+
+.mainContact {
+    @include flexbox(column, center, flex-start);
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+
+    .heroImageSection {
+        @include flexbox(column, center, center);
+        margin: 15px;
+        padding: 0;
+
+        .heroImage {
+            @include style(100%, 550px, 16px);
+        }
+    }
+
+    .contactSection {
+        @include flexbox(column, center, center);
+        padding: 16px;
+
+        .contactTitle {
+            @include text-style(42px, bolder);
+            text-align: center;
+            margin-bottom: 75px;
+        }
+
+        .contactDescription {
+            @include text-style(20px, normal);
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .contactForm {
+            @include flexbox(column, center, center);
+            width: 100%;
+
+            .contactLabel {
+                color: rgb(216, 216, 216);
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+
+            .contactInput,
+            .contactTextArea {
+                width: 100%;
+                max-width: 500px;
+                padding: 16px;
+                border-radius: 8px;
+                border: 1px solid #333;
+                margin-bottom: 16px;
+                background-color: #141414;
+                color: white;
+                font-size: 18px;
+            }
+
+            .contactTextArea {
+                resize: vertical;
+                height: 150px;
+            }
+
+            .contactButton {
+                width: 100%;
+                max-width: 500px;
+                margin-bottom: 16px;
+                padding: 16px;
+                border-radius: 8px;
+                border: none;
+                background-color: #222222;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #ffffff;
+                    color: black;
+                }
+            }
+        }
+    }
+}

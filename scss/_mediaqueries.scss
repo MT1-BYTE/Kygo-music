@@ -1,0 +1,42 @@
+//mediaqueries
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .navBar {
+        flex-direction: column;
+    }
+
+    .navList {
+        flex-direction: column;
+    }
+
+    .profileImage {
+        width: 100%;
+    }
+
+    .tourDates {
+        width: 100%;
+    }
+
+    .tourItem {
+        flex-direction: column;
+    }
+
+    .tourLocation {
+        margin-bottom: 16px;
+    }
+
+    .socialLinks {
+        flex-wrap: wrap;
+    }
+
+    .galleryGrid {
+        grid-template-columns: repeat(1, 1fr); /*3 columnas de igual ancho */
+        width: 100%;
+    }
+
+    .galleryItem {
+        height: auto;
+        object-fit: contain; 
+    } 
+}
