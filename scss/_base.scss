@@ -33,7 +33,7 @@ body {
     justify-content: center;
 }
 
-// Mixin para flexbox en Home
+// Mixin para flexbox
 
 @mixin flexbox($direction: row, $justify: center, $align: center, $wrap: nowrap) {
     display: flex;
@@ -43,7 +43,7 @@ body {
     flex-wrap: $wrap;
 }
 
-// Mixin para imagenes en Home
+// Mixin para imagenes
 
 @mixin style($width, $height, $border-radius: 0, $object-fit: cover) {
     width: $width;
