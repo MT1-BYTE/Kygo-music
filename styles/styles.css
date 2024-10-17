@@ -504,6 +504,13 @@ header {
         flex-direction: column;
     }
 
+    .heroImage {
+        height: 250px; /* Altura fija menor para pantallas móviles */
+        max-height: 250px; /* Aseguramos que no exceda esta altura */
+        object-fit: cover; /* Mantiene las proporciones, sin distorsión */
+        border-radius: 8px; /* Ajuste menor en el radio para pantallas pequeñas */
+    }
+
     .profileImage {
         width: 100%;
     }
@@ -533,6 +540,13 @@ header {
         height: auto;
         object-fit: contain; 
     } 
+    /* Menú hamburguesa */
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: center;     
+    }
 }
 
 
